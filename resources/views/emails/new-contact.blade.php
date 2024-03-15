@@ -24,15 +24,15 @@
 
         <ul>
             <li>
-                Nome: Ciccio
+                Name: {{ $contact->name }}
             </li>
             <li>
-                Email: cicciopasticcio@gmail.com
+                Email: {{ $contact->email }}
             </li>
             <li>
-                Messaggio:
+                Message:
                 <p>
-                    Lorem ipsum dolor sit amet
+                    {{ $contact->message }}
                 </p>
             </li>
         </ul>

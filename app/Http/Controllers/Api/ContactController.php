@@ -23,7 +23,7 @@ class ContactController extends Controller
     {
         $contact = Contact::create($request->validated());
 
-        Mail::to('danieleadmin@gmail.com')->send(new NewContact);
+        Mail::to('danieleadmin@gmail.com')->send(new NewContact($contact));
 
         return response()->json([
             'success' => true,
